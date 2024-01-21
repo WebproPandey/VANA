@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.line::after ,.line::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:linear-gradient(90deg,gray 50%,white );
+    height: 1px;
+    width: 100%;
+}
+
+.line::before
+{
+  top: 100%;
+  left: 0;
+}
+
+.active
+{
+  color:white;
+}
+.page1 .mid .img
+{
+  height: 40vh;
+  width: 40vw;
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://selemen.liqium.com/img/j1.jpg');
+}
+
+.bigimg
+{
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://selemen.liqium.com/img/j2.jpg');
+  transition: all cubic-bezier(0.19, 1, 0.22,1) 2s ;
+}
+
+.right .bigimg
+{
+  transition: all cubic-bezier(0.19, 1, 0.22,1) 2s ;
+
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://selemen.liqium.com/img/j3.jpg');
+}
+.left .bigimg:hover ,.right .bigimg:hover
+
+{
+  /* scale: 1; */
+  height: 120vh;
+  width: 100%;
+}
+.left .bigimg .imgtext ,.right .bigimg .imgtext 
+
+{
+  transition: all cubic-bezier(0.215, 0.610, 0.355, 1) 2s  ;
+}
+.left .bigimg:hover .imgtext ,.right .bigimg:hover .imgtext
+
+{
+  line-height: 3vw;
+}
+.left .bigimg:hover .imgtext h1:nth-child(1) ,.right .bigimg:hover .imgtext h1:nth-child(1)
+
+{
+  font-size: 3vw;
+  color: white;
+}
+
+.left .bigimg:hover .imgtext h1:nth-child(2) ,.right .bigimg:hover .imgtext h1:nth-child(2)
+
+{
+  font-size: 4.5vw;
+  color: white;
+}
+.left .bigimg:hover .imgtext h2:nth-child(3) ,.right .bigimg:hover .imgtext h2:nth-child(3)
+
+{
+  font-size: 1vw;
+  color: white;
+  padding-top: 5px;
+}
+ 
+ .page3 .page3firstimg
+{
+  background-image: url('https://selemen.liqium.com/img/b1.jpg'); 
+  background-position: center;
+  background-size: cover;
+}
+#page3firstimg2
+{
+  background-image: url('https://selemen.liqium.com/img/b2.jpg'); 
+  background-position: center;
+  background-size: cover;
+}
+#page3firstimg3
+{
+  
+    background-image: url('https://selemen.liqium.com/img/b3.jpg'); 
+    background-position: center;
+    background-size: cover;
+}
+
+ #scroll
+ {
+animation: scroll 20s linear infinite;
+}
+@keyframes scroll {
+  from
+  {
+    transform: translateX(0%);
+  }
+  to
+  {
+    transform: translateX(-100%);
+  }
+}  
+
+
+#page8
+{
+  background-size: cover;
+  background-position: center;
+  background-image: url('https://selemen.liqium.com/img/bg1.jpg');
+}
+#page8 .leftimg
+{
+  background-size: cover;
+  background-position: center;
+  background-image: url('https://selemen.liqium.com/img/j4.jpg');
+}
+#page8 .midimg
+{
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://selemen.liqium.com/img/j5.jpg');
+}
+ 
+#page8 .rightimg
+{
+  background-position:  center;
+  background-size: cover;
+  background-image: url('https://selemen.liqium.com/img/j6.jpg');
+}
+#page10img
+{
+  background-size: cover;
+  background-position:top ;
+  background-image: url('https://selemen.liqium.com/img/bg2n1.jpg');
+}

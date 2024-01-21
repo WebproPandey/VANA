@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleman</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="container" class=" w-[100%] bg-black">
+        <div id="image" class="overflow-hidden h-[100vh] w-[100%] flex flex-col items-center">
+            <div class="navbar fixed opacity-0 z-[999]  h-[7vh] w-[100%] flex justify-between ">
+                <div id="menu" class=" left h-[100%] w-[15%] flex   justify-center gap-[1.3vw] items-center">
+                    <div class="line h-[25%] w-[32%] relative"></div>
+                    <h1 class="text-[1vw] text-slate-300" >menu</h1>
+                </div>
+                <div id="button" class="right h-[100%] w-[20%] relative flex justify-end items-end pr-[2vw]"  >
+                    <button class="h-[90%] w-[55%]  rounded-[5vw]  border-[1px] ">
+                        <h1 class="text-zinc-400 capitalize text-[1vw] ">send request</h1>
+                    </button>
+                </div>
+                <div id="menushow" class="absolute flex flex-col justify-between items-center bg-zinc-800 h-[100vh]  w-[100%] z-[9999] translate-y-[-100%]">
+                    <h1  id="close" class="text-[2vw] text-zinc-400 absolute top-0 right-0"><i class="ri-close-line"></i></h1>
+                    <div class="logo h-[10vh] flex justify-center items-center ">
+                        <img src="https://selemen.liqium.com/img/logo.svg" alt="">
+                    </div> 
+                    <div class="mid h-[50v] flex flex-col items-center">
+
+                    <div class="h-[12vh] w-fit">
+                        <h1  id="text1"  class="text-[3.4vw] capitalize text-zinc-400" > projects</h1>
+                    </div>
+                    <div class="h-[12vh] w-fit">
+                        <h1  id="text2" class="text-[3.4vw]  capitalize  text-zinc-400" > services</h1>
+                    </div>
+                    <div class="h-[12vh] w-fit">
+                        <h1 id="text3"  class="text-[3.4vw] capitalize  text-zinc-400" >company</h1>
+                    </div>
+                    <div class=" h-[12vh] w-fit">
+                        <h1 id="text4"  class="text-[3.4vw] capitalize  text-zinc-400" >contact</h1>
+                    </div>
+                    </div>
+                    <div class="h-[8vh]   w-[22%] flex justify-center items-center "  >
+                        <button class="h-[90%] w-[55%]  rounded-[5vw]  border-[1px] bg-zinc-500 hover:bg-zinc-600 ">
+                            <h1 class="text-white text-[1vw] "> Send request</h1>
+                        </button>
+                    </div>
+                    <div class="contact  text-white  h-[10vh] w-fit" >
+                        <h1>+90 5377603707</h1>
+                        <a href="#">info@selemen.ru</a>
+                    </div>
+                    <div class="line h-[15vh]  flex justify-center items-center gap-[2vw] w-full border-t-[1px]">
+                        <a href="#" class="text-white capitalize">whatsapp</a>
+                        <a href="#" class="text-white capitalize">telegram</a>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="img_hold mt-[3vw] h-[85vh] relative flex items-center justify-center  w-[80%]   ">
+                <h1 class="heading opacity-0 text-[25vw] tracking-[-2.5vw] capitalize  relative  text-slate-300 z-[11]  ">selemen <span class="absolute border-[2px] h-[4vw] w-[4vw] inline-flex items-center  justify-center pr-[25px] top-[35%] rounded-[50%] "><h1 class="text-[3vw] font-semibold">r</h1></span> </h1>
+                <div  id="img1"  class="imgbox absolute  top-[50%] left-[10%] z-[1] translate-y-[-50%] h-[35vh] w-[25vw] bg-slate-100">
+                    <div class="img h-full w-full">
+                        <img src="https://selemen.liqium.com/img/m1.jpg"
+                            class="object-cover object-center h-full w-full" alt="">
+                    </div>
+                </div>
+                <div  id="img2"  class="imgbox absolute top-[55%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[50vh] w-[20vw] bg-slate-100">
+                    <div class="img h-full w-full">
+                        <img src="https://selemen.liqium.com/img/m3.jpg"
+                            class="object-cover object-center h-full w-full" alt="">
+                    </div>
+                </div>
+                <div  id="img3"  class="imgbox absolute top-[0%] left-[22%]  h-[18vh] w-[15vw] bg-slate-100">
+                    <div class="img h-full w-full">
+                        <img src="https://selemen.liqium.com/img/m2.jpg"
+                            class="object-cover object-center h-full w-full" alt="">
+                    </div>
+                </div>
+                <div  id="img4"  class="imgbox absolute top-[65%] left-[40%] h-[30vh] w-[25vw] bg-slate-100">
+                    <div class="img h-full w-full">
+                        <img src="https://selemen.liqium.com/img/m4.jpg"
+                            class="object-cover object-center h-full w-full" alt="">
+                    </div>
+                </div>
+                <div  id="img5"  class="imgbox absolute top-[1%] left-[45%] h-[30vh] w-[22vw] bg-slate-100">
+                    <div class="img h-full w-full">
+                        <img src="https://selemen.liqium.com/img/m5.jpg"
+                            class="object-cover object-center h-full w-full" alt="">
+                     </div>
+
+                </div>
+                <div  id="img7"  class="imgbox absolute top-[34%] left-[61%] h-[30vh] w-[18vw] bg-slate-100">
+                    <div class="img h-full w-full">
+                        <img src="https://selemen.liqium.com/img/m7.jpg"
+                            class="object-cover object-center h-full w-full" alt="">
+                     </div>
+
+                </div>
+                <div  id="img6"  class="imgbox absolute top-[60%] z-[111] left-[60%] h-[30vh] w-[22vw] bg-slate-100">
+
+                    <div class="img h-full w-full">
+                        <img src="https://selemen.liqium.com/img/m6.jpg"
+                            class="object-cover object-center h-full w-full" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="lasttext opacity-0 h-[8vh] flex justify-center items-center">
+                <h1 id="textfotter" class="text-slate-300 capitalize">contruction company</h1>
+            </div>
+            
+        </div>
+      
+        <div class="page1 w-[100%] ">
+            <div class="borderline flex  h-[50vh] w-[100%] border-b-[1px]">
+                <div class="left h-[100%] flex items-end w-[50%] border-r-[0.2px]" >
+                    <h1 class="text-[1.1vw] text-white" >©2024</h1>
+                </div>
+                <div class="right h-[100%] flex items-end justify-end w-[50%] border-l-[0.2px]" >
+                    <h1 class="text-[1.1vw] text-white" >Our adress</h1>
+                </div>
+            </div>
+           <div class="up flex justify-center items-end h-[60vh] w-[100%]" >
+                <div class="text flex flex-col  leading-[2.6vw] pt-[5vw] justify-center items-center h-[60%] text-white w-[40%]">
+
+                    <h1 class="text-[2.6vw] ">20+ expertise.</h1>
+                    <h1 class="text-[2.6vw]">We guarrantee</h1>
+                    <h1 class="text-[6vw] mt-[1.4vw] z-[9] font-sans "> quality</h1>
+                </div>
+            
+            </div>
+            <div class="mid flex  h-[50vh] relative w-[100%]">
+                <div class="img h-[40vh] w-[30vw] absolute  left-[50%] translate-x-[-50%]"></div>
+                   <div class="left h-[100%] w-[50%] relative"> </div>
+                   <div id="rightline" class="right relative h-[100%] w-[50%] ">
+                       <div class="absolute midline h-[1%] bottom-0 w-[0.1%]  bg-slate-400"></div>
+                </div>
+            </div>
+            <div  id="fotter" class="fotter relative min-h-[100vh] w-[100%] flex">
+                <div class="h-full w-[50%]  absolute flex">
+                  <div class="fottermidline absolute h-[0%] w-[0.1%] right-[-1px] bg-slate-400"></div>
+                </div>
+                
+                 <div class="left min-h-[100vh] relative  w-[50%] flex flex-col justify-center">
+                    <div class="fotterline  absolute h-[0.1px] w-[0%] bg-slate-400 top-0 right-0 "></div>
+                    <div class="text  h-[30vh] w-[100%] flex flex-col justify-around items-center">
+                        <h1  class="text-[1vw]   text-slate-200 text-center " >o1</h1>
+                        <p  class="text-[1vw]   text-slate-200 text-center " >We use high standerds of engineering <br>solutions to create space as useful as possible</p>
+                    </div>
+
+                   <div class="bigimgbox h-[150vh] w-[90%] flex items-center justify-center ">
+                    <div class="bigimg flex  justify-center items-center h-[80vh] w-[70%] ">
+                     <div class="imgtext leading-[2vw] flex flex-col items-center justify-center">
+                         <h1 class="text-[2vw]  text-slate-200 capitalize " >commercial</h1>
+                         <h1 class="text-[3vw]  text-slate-200" >premises</h1>
+                         <h2 class="text-[.5vw]  text-slate-200 capitalize  pt-[1vw]" >comfortable working sapce</h2>
+                    </div>
+
+                    </div>
+                   </div>
+                   <div class="bottomline  absolute h-[0.1px] w-[0%] bg-slate-400 bottom-0 right-0 "></div>
+
+                 </div>
+                 <div class="right min-h-[100vh] w-[50%] relative flex flex-col items-end">
+                    <div class="fotterline  absolute h-[0.1px] w-[0%] bg-slate-400 top-0 left-0 "></div>
+
+                    <div class="text h-[30vh] w-[100%] flex flex-col justify-around items-center">
+                        <h1 class="text-[1vw]   text-slate-200  text-center" >o2</h1>
+                        <p class="text-[1vw]   text-slate-200  text-center" >We provide deep quality control at every <br> satge in as it's  important for us</p>
+                    </div>
+                   <div class="bigimgbox h-[150vh] w-[90%] flex items-center justify-center ">
+                    <div class="bigimg flex  justify-center items-center h-[80vh] w-[70%] ">
+                     <div class="imgtext leading-[2vw] flex flex-col items-center justify-center">
+                         <h1 class="text-[2vw]  text-slate-200 capitalize " >houses</h1>
+                         <h1 class="text-[3vw]  text-slate-200 " >aprtments</h1>
+                         <h2 class="text-[.5vw]  text-slate-200 capitalize  pt-[1vw]" >a cray space for you</h2>
+                    </div>
+
+                    </div>
+                   </div>
+                   <div class="bottomline  absolute h-[0.1px] w-[0%] bg-slate-400 bottom-0 left-0">
+                   </div>
+
+                 </div>
+
+            </div>
+        </div>
+        <div class="page2  min-h-[100vh] w-[100%] flex flex-col  relative overflow-hidden justify-center items-end ">
+           <div id="eightytext" class="h-[100vh]  w-full relative overflow-hidden ">
+               <h1 id="eighty" class="relative top-[-10%] text-center block text-[40vw] text-slate-300 ">80<span class="absolute  top-[30%] left-[65%] text-[2vw] block border-[1px] px-[3vw] py-[1vw] rounded-[30px] bg-black  "><i class="ri-add-fill"></i></span>  </h1>
+               <h1 id="page2text" class="text-slate-300 text-[2vw] absolute bottom-12 left-[50%] translate-x-[-50%] ">projects</h1>
+               <h1 id="page2text" class="text-slate-300 text-[2vw] absolute bottom-5 left-[50%] translate-x-[-50%] ">delivered</h1>
+                   
+            </div>
+
+
+        </div>
+        <div class="page3 min-h-[100vh] w-[100%] relative  ">
+
+            <div class="page3firstimg overflow-hidden flex flex-col justify-center items-center h-[100vh] w-[100%] z-[9] relative">
+                    <div id="page3text" class="flex flex-col justify-center items-center absolute top-[-50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[30vh] w-[40vw]  ">
+                      <h1 class="text-white text-[4vw] uppercase pb-[1vw]" >apartments #80</h1>
+                      <h1 class="text-white text-[.9vw] text-center" >A cozy  sapce for living working in the very <br> central of city</h1>
+                    </div>
+            </div>
+            
+            <div id="page3firstimg2" class="page3firstimg overflow-hidden relative flex flex-col justify-center items-center h-[100vh] w-[100%] z-[99]">
+                <div id="page3text2" class="flex flex-col justify-center items-center absolute top-[-90%] left-[50%] translate-x-[-50%] h-[30vh] w-[40vw] ">
+                  <h1 class="text-white text-[3vw] uppercase pb-[1vw] tracking-tighter" >sea of ligth</h1>
+                  <h1 class="text-white text-[.9vw] text-center tracking-tighter" >confort surrounded by natural <br> materials</h1>
+                </div>
+            </div>
+            <div id="page3firstimg3" class="page3firstimg overflow-hidden relative  flex flex-col justify-center items-center h-[100vh] w-[100%] z-[999] ">
+                <div id="page3text3" class="flex flex-col justify-center items-center absolute top-[-90%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[30vh] w-[40vw] ">
+                  <h1 class="text-white text-[4vw] uppercase pb-[1vw] tracking-tighter" >first number</h1>
+                  <h1 class="text-white text-[.9vw] text-center tracking-tighter"> an eleborate sapce in one of the most prestigious <br> area of the city</h1>
+                </div>
+            </div>
+           
+        </div>
+        <div class="page4 min-h-[100vh] w-[100%] bg-black">
+            <div class="up h-[20vh] w-[100%] flex ">
+                <div class="left h-[100%] w-[100%] relative ">
+                    <div id="page4firstline" class="line absolute right-0 h-[10%] w-[0.1px] bg-slate-400"></div>
+                </div>
+                <div class="right h-[100%] w-[100%] "></div>
+            </div>
+            <div class="mid h-[20vh] w-[100%] relative flex justify-center items-center">
+                <button  class="text-[1vw] border-[1px] border-b-zinc-400 text-white bg-zinc-800 rounded-[28px] px-[2vw] py-[.8vw] "><h1>Send request</h1></button>
+                <div id="page4leftmidline" class="absolute top-0 left-[50%] h-[0.1px] w-[0%] bg-slate-400"></div>
+                <div id="page4bleftmidline" class="absolute bottom-0 left-[50%] h-[0.1px] w-[0%] bg-slate-400"></div>
+                <div id="page4rightmidline" class="absolute top-0 right-[50%] h-[0.1px] w-[0%] bg-slate-400"></div>
+                <div id="page4brightmidline" class="absolute bottom-0 right-[50%] h-[0.1px] w-[0%] bg-slate-400"></div>
+            </div>
+
+            <div class="down h-[100vh] w-[100%] flex">
+                <div class="left h-[100%] w-[30%] flex justify-center leading-[4.7vw] items-center" >
+                    <h1 class="text-[4vw] text-white tracking-tighter">We will help <br> you to implement</h1>
+                </div>
+                <div class="mid h-[100%] w-[50%] relative flex items-end pb-[5vw]">
+                    <div class="absolute top-[58%] h-[0.1px] w-[100%] bg-slate-400"></div>
+                    <div class="text h-[20vh] w-[60%] ml-[2vw]">
+                      <p id="selemenpera" class=" opacity-0 text-slate-200">Selemen® — is a company for the construction and
+                        decoration of premises. We carry out projects on time,
+                        within budget and with an exceptional level of quality.
+                        </p>
+                    </div>
+                </div>
+                <div class="mid h-[100%] w-[20%] flex justify-center items-center leading-[4vw] pt-[12vw]">
+                    <h1 class="text-[4vw] text-white tracking-tighter text-end">any desigin <br> <span class="text-slate-400">solutions</span> </h1>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="textscroll h-[70vh] w-[100%] overflow-x-hidden overflow-y-hidden relative">
+            <div class="cursur h-[10vh] w-[10vh] scale-0 flex justify-center items-center z-[9]  bg-gray-500 rounded-full absolute top-0 left-[50%] translate-x-[-50%] ">
+                <i class="ri-arrow-right-line text-[1vw] "></i>
+            </div>
+              <div id="scroll" class="h-[100%] w-[100%] whitespace-nowrap relative">
+                <h1 class="text-[18vw] inline-block text-gray-400 ">future by Selemen</h1>
+                <h1 class="pl-[5vw] text-[18vw] inline-block text-gray-400  ">future by Selemen</h1>
+                <h1 class="pl-[5vw] text-[18vw] inline-block text-gray-400  ">future by Selemen</h1>
+                
+            </div>
+        </div>
+        <div class="page5 h-[120vh] w-[100%]" >
+            <div class="bigimg2 h-[120vh] w-[100%] flex justify-center items-center relative overflow-hidden">
+                <img id="bigimg2" src="https://selemen.liqium.com/img/bg13.jpg" alt="" class="object-cover object-center  absolute  ">
+            </div>
+        </div>
+        <div class="page6 overflow-hidden min-h-[100vh] w-[100%] relative" >
+            <div class="page6firstbox h-[100vh] w-[100%] flex justify-center items-center pl-[18vw] relative">
+                <img  id="page6firstimg" src="https://selemen.liqium.com/img/lt1.jpg" class="object-cover object-center h-[70vh] w-[40vh]" alt="">
+            </div>
+        <div class=" absolute h-100vh w-[100%] top-0" >
+          <div class="page6text1 h-[20vh] flex justify-start items-center w-[100%]  z-[99] relative">
+            <h1 class="page6h1 text-[10vw] font-[500] pl-[2vw]  text-white relative " >Selemen</h1>
+            <div class="inline-block rounded-[50%] px-[1vw] py-[.1vw] border-[4px] border-white capitalize  font-[900] text-white">r</div>
+            <div id="boxscroll1" class="scroll h-[100%] w-[100%] absolute top-0  left-0 bg-[#151519a6] mix-blend-multiply"></div>  
+          </div>
+          <div class="page6text2 h-[20vh] flex justify-start items-center w-[100%]  z-[99] relative">
+          <h1 class="page6h1 text-[10vw] font-[500] pl-[2vw]  text-white relative " >provides a full</h1>
+          <div id="boxscroll2" class="scroll h-[100%] w-[100%] absolute top-0  left-0 bg-[#151519a6] mix-blend-multiply"></div>  
+          </div>
+          <div class="page6text3 h-[20vh] flex justify-start items-center w-[100%]  z-[99] relative">
+            <h1 class="page6h1 text-[10vw] font-[500] pl-[2vw]  text-white relative " >range of service</h1>
+            <div id="boxscroll3" class="scroll h-[100%] w-[100%] absolute top-0  left-0 bg-[#151519a6] mix-blend-multiply"></div>  
+          </div>
+          <div class="page6text4 h-[20vh] flex justify-start items-center w-[100%]  z-[99] relative">
+            <h1 class="page6h1 text-[10vw] font-[500] pl-[2vw]  text-white relative " >for interior</h1>
+            <div id="boxscroll4" class="scroll h-[100%] w-[100%] absolute top-0  left-0 bg-[#151519a6] mix-blend-multiply"></div>  
+          </div>
+          <div class="page6text5 h-[20vh] flex justify-start items-center w-[100%]  z-[99] relative">
+            <h1 class="page6h1 text-[10vw] font-[500] pl-[2vw]  text-white relative " >decoration</h1>
+            <div id="boxscroll5" class="scroll h-[100%] w-[100%] absolute top-0  left-0 bg-[#151519a6] mix-blend-multiply"></div>  
+       
+          </div>
+        </div> 
+        </div>
+        <div class="page7 overflow-hidden  min-h-[150vh] w-[100%] relative" >
+            <div class="page7firstbox h-[100vh] w-[100%] flex justify-end items-center  relative">
+                <img  id="page7firstimg" src="https://selemen.liqium.com/img/lt2.jpg" class="object-cover object-center h-[110vh] w-[60vh]" alt="">
+                <img id="page7secimg" src="https://selemen.liqium.com/img/lt3.jpg" class="h-[50vh] w-[18vw] absolute bottom-[-70%] left-0"  alt="">
+            </div>
+        <div class=" absolute h-100vh w-[100%] top-0" >
+          <div class="page7text1 h-[20vh] flex justify-start items-center w-[100%]  z-[99] relative">
+            <h1 class="page7h1 text-[10vw] font-[500] pl-[2vw]  text-white relative " >Selemen</h1>
+            <div class="inline-block rounded-[50%] px-[1vw] py-[.1vw] border-[4px] border-white capitalize  font-[900] text-white">r</div>
+            <div id="boxscroll6" class="scroll h-[100%] w-[100%] absolute top-0  left-0 bg-[#151519a6] mix-blend-multiply"></div>  
+          </div>
+          <div class="page7text2 h-[20vh] flex justify-start items-center w-[100%]  z-[99] relative">
+          <h1 class="page7h1 text-[10vw] font-[500] pl-[2vw]  text-white relative " >provides a full</h1>
+          <div id="boxscroll7" class="scroll h-[100%] w-[100%] absolute top-0  left-0 bg-[#151519a6] mix-blend-multiply"></div>  
+          </div>
+          <div class="page7text3 h-[20vh] flex justify-start items-center w-[100%]  z-[99] relative">
+            <h1 class="page7h1 text-[10vw] font-[500] pl-[2vw]  text-white relative " >range of service</h1>
+            <div id="boxscroll8" class="scroll h-[100%] w-[100%] absolute top-0  left-0 bg-[#151519a6] mix-blend-multiply"></div>  
+          </div>
+          <div class="page7text4 h-[20vh] flex justify-start items-center w-[100%]  z-[99] relative">
+            <h1 class="page7h1 text-[10vw] font-[500] pl-[2vw]  text-white relative " >for interior</h1>
+            <div id="boxscroll9" class="scroll h-[100%] w-[100%] absolute top-0  left-0 bg-[#151519a6] mix-blend-multiply"></div>  
+          </div>
+          <div class="page7text5 h-[20vh] flex justify-start items-center w-[100%]  z-[99] relative">
+            <h1 class="page7h1 text-[10vw] font-[500] pl-[2vw]  text-white relative " >decoration</h1>
+            <div id="boxscroll10" class="scroll h-[100%] w-[100%] absolute top-0  left-0 bg-[#151519a6] mix-blend-multiply"></div>  
+       
+          </div>
+        </div>
+        
+        </div>
+        <div class="page8  min-h-[100vh] w-[100%]">
+            <div class="up flex h-[50vh] w-[100%]">
+                <div class="left h-[100%] w-[50%] relative  flex justify-start items-end">
+                    <h1 class="text-[1vw] text-white  capitalize  pl-[2vw]"> about company <i class="ri-arrow-right-line"></i> </h1>
+                    <div class="page8line absolute top-0 right-0 h-[.1vh] w-[0%] bg-[#151519a6] "></div>
+                    <div class="page8midline h-[1%] w-[.1vw] absolute right-0 top-0 bg-[#151519a6]"></div>
+                </div>
+                <div class="right h-[100%] w-[50%] relative flex justify-end items-end">
+                     <h1 class="text-[1vw] text-white  capitalize pr-[2vw]">service<i class="ri-arrow-right-line"></i></h1>
+                    <div class="page8line absolute top-0 left-0 h-[0.1vh] w-[0%] bg-[#151519a6] "></div>
+                </div> 
+            </div>
+            <div id="page8" class="w-[100%] min-h-[280vh] ">
+                <div class="text flex justify-center items-center h-[50vh] w-[100%]">
+                    <div class="h-[100%] w-[40vw] flex flex-col justify-center items-center  " >
+                        <h1 class="text-center text-[3vw] text-white leading-10 "  >Guarantee of <br> reliability</h1>
+                        <h1 class="text-center text-[.8vw] mt-[1vw] text-white "  >And full information about <br>all stages of repair</h1>
+                    </div>
+                </div>
+                <div class="w-[100%] min-h-[150vh] flex justify-between items-center  relative">
+
+                <div class="leftimg h-[110vh] w-[18vw] flex justify-end items-end ">
+                      <div class="about h-[30vh] w-[100%]  px-[1vw]  ">
+                        <h1 class="text-white font-[400]"  >01</h1>
+                        <h1 class="text-white font-[400]"  >We implement <br>
+                            the most technically <br>
+                            complex design <br>
+                            and architectural <br>
+                            solutions</h1>
+                      </div>
+                </div>
+                 <div class="midimg h-[110vh] w-[40vw] relative top-[40vh] ">
+                    <div class="about h-[30vh] w-[100%] px-[1vw] flex flex-col justify-evenly">
+                        <h1 class="text-white font-[400]"  >02</h1>
+                        <h1 class="text-white font-[400]"  >
+                            We use the best <br>
+                            building materials <br>
+                            available on the market 
+                        </h1>
+                      </div>
+                 </div>
+                 <div class="rightimg h-[110vh] w-[25vw] relative top-[60vh]">
+                    <div class="about h-[30vh] w-[100%] px-[1vw] flex flex-col justify-evenly">
+                        <h1 class="text-white font-[400]"  >03</h1>
+                        <h1 class="text-white font-[400]"  > 
+                            Jewelry precision of <br>
+                            work, due to the <br>
+                            professionalism and <br>
+                            experience of our <br>
+                            employees
+
+
+                        </h1>
+                      </div>
+                 </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="page9 min-h-[100vh] w-[100%]">
+            <div class="h-[70vh] w-[100%] flex flex-col justify-end items-center">
+                <div class="text h-[30vh] w-[30vw] flex flex-col justify-end items-center">
+                    <h1 class="text-white text-[3vw] text-center leading-10">Wide range of <br>solutions</h1>
+                    <h1 class="text-white text-[.8vw] text-center mt-[1vw] ">We will help you implement a project of <br> any complexity</h1>
+                </div>
+            </div>   
+            <div id="page9img" class="min-h-[100vh] w-[100%]  relative flex  justify-between">
+                <div class="fistlineimg  h-[110vh] w-[20vh] relative top-[5vw] flex flex-col justify-between">
+                    <img src="https://selemen.liqium.com/img/mv1.jpg" class="w-[100%] h-[45%] object-cover object-center" alt="">
+                    <img src="https://selemen.liqium.com/img/mv2.jpg" class="w-[100%] h-[50%] object-cover object-center" alt="">
+                </div>
+                <div class="seclineimg  h-[110vh] w-[40vh] relative top-[15vw] flex flex-col justify-between">
+                    <img src="https://selemen.liqium.com/img/mv3.jpg" class="w-[100%] h-[65%] object-cover object-center" alt="">
+                    <img src="https://selemen.liqium.com/img/mv4.jpg" class="w-[100%] h-[30%] object-cover object-center" alt="">
+
+                </div>
+                <div class="thirdlineimg  h-[110vh] w-[70vh] relative top-[25vw] flex flex-col justify-between  ">
+                    <img src="https://selemen.liqium.com/img/mv5.jpg" class="object-cover object-center h-[100%] w-[100%]" alt="">
+                </div>
+                <div class="fourlineimg  h-[110vh] w-[40vh] relative top-[7vw] flex flex-col justify-between ">
+                    <img src="https://selemen.liqium.com/img/mv6.jpg" class="object-cover object-center h-[50%] w-[100%]" alt="">
+                    <img src="https://selemen.liqium.com/img/mv7.jpg" class="object-cover object-center h-[45%] w-[100%]" alt="">
+                </div>
+                <div class="fivelineimg  h-[110vh] w-[20vh] relative  flex flex-col justify-between">
+                    <img src="https://selemen.liqium.com/img/mv8.jpg" class="object-cover object-center h-[35%] w-[100%]" alt="">
+                    <img src="https://selemen.liqium.com/img/mv9.jpg" class="object-cover object-center h-[60%] w-[100%]" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="page10 min-h-[100vh] w-[100%]">
+            <div class="space h-[50vh] w-[100%]"></div>
+            <div class="box h-[60vh] w-[100%] relative overflow-hidden">
+                
+                <div id="page10img" class="up h-[60vh] w-[100%] flex justify-end items-end absolute">
+                    <div class="footer h-[10vh] w-[100%] flex justify-between">
+                        <h1 class="text-[1vw] pl-[2vw] text-white" >Selemen®</h1>
+                        <div class="h-[100%] w-[10%] flex justify-evenly ">
+                            <h1 class="text-[1vw] text-zinc-300 capitalize" >project</h1>
+                            <h1 class="text-[1vw] text-zinc-300 capitalize" >services</h1>
+                        </div>
+                       <h1 class="text-[1vw] pr-[2vw] text-zinc-300 capitalize" >contact</h1>
+                    </div>
+                </div>
+
+            </div>
+            <div class="h-[20vh] w-[100%] flex flex-col justify-center items-center">
+                <h1 class="text-[.8vw] text-white">Construction company</h1>
+                <div class="email h-[80%] w-[100%] border-b-[.5px] border-[#151519a6] flex items-center pl-[2vw] ">
+                    <a href="#" class="underline text-[2vw] text-zinc-400">Info@selemen.ru</a>
+                </div>
+            </div>
+            <div class="h-[20vh] w-[100%] flex flex-col justify-center items-center">
+                <h1 class="text-[.8vw] text-white">Messengers</h1>
+                <div class="meassege h-[80%] w-[100%] border-b-[.5px] border-[#151519a6] flex items-center justify-center pl-[2vw]">
+                <div class="left h-[100%] w-[50%] items-center flex">
+
+                 <div class=" flex">
+                  <div class="flex justify-center items-center border-[1px] px-[1vh] h-[6vh] w-[6vh]">
+                    <i class="ri-whatsapp-fill text-[1.7vw] text-white"></i>
+                  </div>
+                  <h1 class="text-[2vw] text-zinc-400 font-[400] pl-[1vw] tracking-tighter">WhatApp</h1>
+                </div> 
+                </div>
+                <div class="right h-[100%] w-[50%] flex items-center">
+
+                <div class="flex">
+                    <div class="flex justify-center items-center border-[1px] px-[1vh] h-[6vh] w-[6vh]">
+                      <i class="ri-telegram-fill  text-[1.7vw] text-white"></i>
+                    </div>
+                    <h1 class="text-[2vw] text-zinc-400 font-[400] pl-[1vw] tracking-tighter">Telegram</h1>
+                  </div>  
+                </div>
+                
+                </div>
+            </div>
+            <div class="lastfotter h-[100vh] w-[100%]">
+              <div class="up h-[50vh] w-[100%] ">
+                <div class="left h-[100%] w-[50%]  relative">
+                    <div class="h-[30vh] w-[30%] flex justify-center items-center" >
+                        <h1 class="text-zinc-400 text-[1.4vw]">More than 20 years <br>
+                            of successful work</h1>
+
+                    </div>
+                    <div class="midline absolute h-[0%] w-[.3vh] bg-[#151519a6] top-[-1%] right-0"></div>
+                </div>
+              </div>
+              <div class="text h-[50vh] w-[100%]  ">
+                  <div class="fottertext overflow-hidden h-[40vh] w-[100%] relative  flex flex-col justify-center items-center ">
+                    <div class="line absolute w-[98%] h-[1px] bg-[#151519a6] bottom-0"></div>
+                     <h1 class="fotterheading  text-[25vw] tracking-[-2.5vw]  absolute top-[-155%] text-[#151519a6]  ">Selemen </h1>
+                     <span class="Rlogo text-[3vw] border-[4px] rounded-[50%] border-[#151519a6] capitalize text-[#151519a6] inline-block px-[.8vw] absolute top-[-110%] right-[8%] " >r</span>
+
+                </div> 
+                <div class="flex justify-between items-center px-[1vw]">
+                    <h1 class="text-[2vw] text-[#151519a6] " >©2024</h1>
+                    <h1 class="text-[2vw] text-[#151519a6] " >Made by <b class="text-slate-300">Liqium</b></h1>
+                </div>
+            </div>
+
+            </div>
+  
+
+
+         </div>
+
+</div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"
+        integrity="sha512-LQQDtPAueBcmGXKdOBcMkrhrtqM7xR2bVrnMtYZ8ImAZhFlIb5xrMqQ6uZviyeSB+4mYj89ta8niiCIQM1Gj0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
